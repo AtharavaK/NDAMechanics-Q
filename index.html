@@ -1,1 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NDA Mechanics Questions</title>
+  <!-- MathJax for rendering equations -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
 
+    header {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 24px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #007bff;
+      margin-top: 20px;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 5px;
+    }
+
+    .question {
+      margin: 15px 0;
+      padding: 10px;
+      border-left: 4px solid #007bff;
+      background-color: #f9f9f9;
+      border-radius: 4px;
+    }
+
+    .question p {
+      margin: 5px 0;
+    }
+
+    .options {
+      margin-left: 20px;
+    }
+
+    /* Hidden checkbox */
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    /* Show Answer Button */
+    label.show-answer-btn {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    label.show-answer-btn:hover {
+      background-color: #218838;
+    }
+
+    /* Answer Visibility */
+    .answer {
+      display: none;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #e9f7ef;
+      border: 1px solid #c3e6cb;
+      border-radius: 4px;
+      color: #155724;
+    }
+
+    /* Show answer when checkbox is checked */
+    input[type="checkbox"]:checked ~ .answer {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    NDA Mechanics Questions and Answers
+  </header>
+
+  <div class="container">
+    <!-- Scalars and Vectors -->
+    <h2>1. Scalars and Vector Quantities</h2>
+    <div class="question">
+      <p><strong>Q1:</strong> Which of the following is a vector quantity?</p>
+      <div class="options">
+        (a) Speed<br>
+        (b) Distance<br>
+        (c) Displacement<br>
+        (d) Mass
+      </div>
+      <input type="checkbox" id="q1">
+      <label for="q1" class="show-answer-btn">Show Answer</label>
+      <div class="answer">
+        <strong>Answer:</strong> (c) Displacement<br>
+        <strong>Explanation:</strong> Displacement has both magnitude and direction, making it a vector quantity.
+      </div>
+    </div>
+
+    <div class="question">
+      <p><strong>Q2:</strong> Two forces of \(6 \, \text{N}\) and \(8 \, \text{N}\) act at a point at an angle of \(90^\circ\). What is the magnitude of the resultant force?</p>
+      <div class="options">
+        (a) \(10 \, \text{N}\)<br>
+        (b) \(14 \, \text{N}\)<br>
+        (c) \(2 \, \text{N}\)<br>
+        (d) \(12 \, \text{N}\)
+      </div>
+      <input type="checkbox" id="q2">
+      <label for="q2" class="show-answer-btn">Show Answer</label>
+      <div class="answer">
+        <strong>Answer:</strong> (a) \(10 \, \text{N}\)<br>
+        <strong>Solution:</strong> 
+        Using the Pythagorean theorem:
+        \[
+        R = \sqrt{F_1^2 + F_2^2} = \sqrt{6^2 + 8^2} = \sqrt{36 + 64} = 10 \, \text{N}.
+        \]
+      </div>
+    </div>
+
+    <!-- Kinematics -->
+    <h2>2. Kinematics</h2>
+    <div class="question">
+      <p><strong>Q3:</strong> Which of the following remains constant during uniform circular motion?</p>
+      <div class="options">
+        (a) Velocity<br>
+        (b) Speed<br>
+        (c) Acceleration<br>
+        (d) Displacement
+      </div>
+      <input type="checkbox" id="q3">
+      <label for="q3" class="show-answer-btn">Show Answer</label>
+      <div class="answer">
+        <strong>Answer:</strong> (b) Speed<br>
+        <strong>Explanation:</strong> In uniform circular motion, speed remains constant, but velocity changes due to the change in direction.
+      </div>
+    </div>
+
+    <div class="question">
+      <p><strong>Q4:</strong> A car accelerates uniformly from rest to \(20 \, \text{m/s}\) in \(5 \, \text{s}\). What is the acceleration?</p>
+      <div class="options">
+        (a) \(2 \, \text{m/s}^2\)<br>
+        (b) \(4 \, \text{m/s}^2\)<br>
+        (c) \(5 \, \text{m/s}^2\)<br>
+        (d) \(10 \, \text{m/s}^2\)
+      </div>
+      <input type="checkbox" id="q4">
+      <label for="q4" class="show-answer-btn">Show Answer</label>
+      <div class="answer">
+        <strong>Answer:</strong> (b) \(4 \, \text{m/s}^2\)<br>
+        <strong>Solution:</strong> 
+        Using the formula for acceleration:
+        \[
+        a = \frac{\Delta v}{\Delta t} = \frac{20 - 0}{5} = 4 \, \text{m/s}^2.
+        \]
+      </div>
+    </div>
+
+    <!-- Laws of Motion -->
+    <h2>3. Laws of Motion</h2>
+    <div class="question">
+      <p><strong>Q5:</strong> According to Newton’s Third Law, action and reaction forces:</p>
+      <div class="options">
+        (a) Act on the same body<br>
+        (b) Act on different bodies<br>
+        (c) Cancel each other<br>
+        (d) Are always equal to zero
+      </div>
+      <input type="checkbox" id="q5">
+      <label for="q5" class="show-answer-btn">Show Answer</label>
+      <div class="answer">
+        <strong>Answer:</strong> (b) Act on different bodies<br>
+        <strong>Explanation:</strong> Action and reaction forces act on different bodies and never cancel each other.
+      </div>
+    </div>
+
+    <div class="question">
+      <p><strong>Q6:</strong> A force of \(15 \, \text{N}\) acts on a body of mass \(3 \, \text{kg}\). What is the acceleration produced?</p>
+      <div class="options">
+        (a) \(3 \, \text{m/s}^2\)<br>
+        (b) \(5 \, \text{m/s}^2\)<br>
+        (c) \(10 \, \text{m/s}^2\)<br>
+        (d) \(15 \, \text{m/s}^2\)
+      </div>
+      <input type="checkbox" id="q6">
+      <label for="q6" class="show-answer-btn">Show Answer</label>
+      <div class="answer">
+        <strong>Answer:</strong> (b) \(5 \, \text{m/s}^2\)<br>
+        <strong>Solution:</strong> 
+        Using Newton's Second Law:
+        \[
+        a = \frac{F}{m} = \frac{15}{3} = 5 \, \text{m/s}^2.
+        \]
+      </div>
+    </div>
+
+    <!-- Work, Energy, and Power -->
+    <h2>4. Work, Energy, and Power</h2>
+    <div class="question">
+      <p><strong>Q7:</strong> A force of \(10 \, \text{N}\) displaces an object by \(5 \, \text{m}\) in the direction of the force. What is the work done?</p>
+      <div class="options">
+        (a) \(20 \, \text{J}\)<br>
+        (b) \(50 \, \text{J}\)<br>
+        (c) \(100 \, \text{J}\)<br>
+        (d) \(150 \, \text{J}\)
+      </div>
+      <input type="checkbox" id="q7">
+      <label for="q7" class="show-answer-btn">Show Answer</label>
+      <div class="answer">
+        <strong>Answer:</strong> (b) \(50 \, \text{J}\)<br>
+        <strong>Solution:</strong> 
+        Using the formula for work:
+        \[
+        W = Fd = (10)(5) = 50 \, \text{J}.
+        \]
+      </div>
+    </div>
+
+    <div class="question">
+      <p><strong>Q8:</strong> A machine lifts a load of \(200 \, \text{kg}\) to a height of \(10 \, \text{m}\) in \(5 \, \text{s}\). What is the power of the machine? (\(g = 10 \, \text{m/s}^2\))</p>
+      <div class="options">
+        (a) \(2000 \, \text{W}\)<br>
+        (b) \(3000 \, \text{W}\)<br>
+        (c) \(4000 \, \text{W}\)<br>
+        (d) \(5000 \, \text{W}\)
+      </div>
+      <input type="checkbox" id="q8">
+      <label for="q8" class="show-answer-btn">Show Answer</label>
+      <div class="answer">
+        <strong>Answer:</strong> (c) \(4000 \,
+        <div class="answer">
+          <strong>Answer:</strong> (c) \(4000 \, \text{W}\)<br>
+          <strong>Solution:</strong> 
+          Using the formula for power:
+          \[
+          P = \frac{W}{t} = \frac{mgh}{t} = \frac{(200)(10)(10)}{5} = 4000 \, \text{W}.
+          \]
+        </div>
+      </div>
+  
+      <!-- Rotational Motion -->
+      <h2>5. Rotational Motion</h2>
+      <div class="question">
+        <p><strong>Q9:</strong> A stone tied to a string of length \(1 \, \text{m}\) is whirled in a horizontal circle with a speed of \(4 \, \text{m/s}\). What is the centripetal force if the mass of the stone is \(0.5 \, \text{kg}\)?</p>
+        <div class="options">
+          (a) \(4 \, \text{N}\)<br>
+          (b) \(6 \, \text{N}\)<br>
+          (c) \(8 \, \text{N}\)<br>
+          (d) \(10 \, \text{N}\)
+        </div>
+        <input type="checkbox" id="q9">
+        <label for="q9" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (c) \(8 \, \text{N}\)<br>
+          <strong>Solution:</strong> 
+          Using the formula for centripetal force:
+          \[
+          F_c = \frac{mv^2}{r} = \frac{(0.5)(4)^2}{1} = 8 \, \text{N}.
+          \]
+        </div>
+      </div>
+  
+      <div class="question">
+        <p><strong>Q10:</strong> A torque of \(10 \, \text{Nm}\) is applied to a wheel of moment of inertia \(2 \, \text{kg} \cdot \text{m}^2\). What is the angular acceleration?</p>
+        <div class="options">
+          (a) \(2 \, \text{rad/s}^2\)<br>
+          (b) \(5 \, \text{rad/s}^2\)<br>
+          (c) \(10 \, \text{rad/s}^2\)<br>
+          (d) \(20 \, \text{rad/s}^2\)
+        </div>
+        <input type="checkbox" id="q10">
+        <label for="q10" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (b) \(5 \, \text{rad/s}^2\)<br>
+          <strong>Solution:</strong> 
+          Using the formula for angular acceleration:
+          \[
+          \alpha = \frac{\tau}{I} = \frac{10}{2} = 5 \, \text{rad/s}^2.
+          \]
+        </div>
+      </div>
+  
+      <!-- Gravitation -->
+      <h2>6. Gravitation</h2>
+      <div class="question">
+        <p><strong>Q11:</strong> Two masses of \(5 \, \text{kg}\) and \(10 \, \text{kg}\) are separated by \(2 \, \text{m}\). What is the gravitational force between them? (\(G = 6.67 \times 10^{-11} \, \text{Nm}^2/\text{kg}^2\))</p>
+        <div class="options">
+          (a) \(8.34 \times 10^{-10} \, \text{N}\)<br>
+          (b) \(1.67 \times 10^{-9} \, \text{N}\)<br>
+          (c) \(2.50 \times 10^{-10} \, \text{N}\)<br>
+          (d) \(4.17 \times 10^{-10} \, \text{N}\)
+        </div>
+        <input type="checkbox" id="q11">
+        <label for="q11" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (a) \(8.34 \times 10^{-10} \, \text{N}\)<br>
+          <strong>Solution:</strong> 
+          Using Newton's Law of Gravitation:
+          \[
+          F = G \frac{m_1 m_2}{r^2} = (6.67 \times 10^{-11}) \frac{(5)(10)}{(2)^2} = 8.34 \times 10^{-10} \, \text{N}.
+          \]
+        </div>
+      </div>
+  
+      <div class="question">
+        <p><strong>Q12:</strong> What is the escape velocity from Earth’s surface? (\(M = 6 \times 10^{24} \, \text{kg}\), \(R = 6.4 \times 10^6 \, \text{m}\), \(G = 6.67 \times 10^{-11} \, \text{Nm}^2/\text{kg}^2\))</p>
+        <div class="options">
+          (a) \(10.2 \, \text{km/s}\)<br>
+          (b) \(11.2 \, \text{km/s}\)<br>
+          (c) \(12.2 \, \text{km/s}\)<br>
+          (d) \(13.2 \, \text{km/s}\)
+        </div>
+        <input type="checkbox" id="q12">
+        <label for="q12" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (b) \(11.2 \, \text{km/s}\)<br>
+          <strong>Solution:</strong> 
+          Using the formula for escape velocity:
+          \[
+          v_e = \sqrt{\frac{2GM}{R}} = \sqrt{\frac{2(6.67 \times 10^{-11})(6 \times 10^{24})}{6.4 \times 10^6}} \approx 11.2 \, \text{km/s}.
+          \]
+        </div>
+      </div>
+  
+      <!-- Properties of Solids and Fluids -->
+      <h2>7. Properties of Solids and Fluids</h2>
+      <div class="question">
+        <p><strong>Q13:</strong> What principle explains why a ship floats on water?</p>
+        <div class="options">
+          (a) Pascal’s Law<br>
+          (b) Archimedes’ Principle<br>
+          (c) Bernoulli’s Principle<br>
+          (d) Newton’s Third Law
+        </div>
+        <input type="checkbox" id="q13">
+        <label for="q13" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (b) Archimedes’ Principle<br>
+          <strong>Explanation:</strong> Archimedes’ principle explains buoyancy, which allows ships to float.
+        </div>
+      </div>
+  
+      <div class="question">
+        <p><strong>Q14:</strong> Why does a needle float on water?</p>
+        <div class="options">
+          (a) Buoyant force<br>
+          (b) Surface tension<br>
+          (c) Viscosity<br>
+          (d) Gravity
+        </div>
+        <input type="checkbox" id="q14">
+        <label for="q14" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (b) Surface tension<br>
+          <strong>Explanation:</strong> Surface tension acts like an elastic membrane, allowing the needle to float.
+        </div>
+      </div>
+  
+      <!-- Oscillations and Waves -->
+      <h2>8. Oscillations and Waves</h2>
+      <div class="question">
+        <p><strong>Q15:</strong> What type of wave is sound?</p>
+        <div class="options">
+          (a) Transverse<br>
+          (b) Longitudinal<br>
+          (c) Electromagnetic<br>
+          (d) Surface
+        </div>
+        <input type="checkbox" id="q15">
+        <label for="q15" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (b) Longitudinal<br>
+          <strong>Explanation:</strong> Sound waves are longitudinal waves.
+        </div>
+      </div>
+  
+      <div class="question">
+        <p><strong>Q16:</strong> A pendulum has a length of \(1 \, \text{m}\). What is its time period? (\(g = 9.8 \, \text{m/s}^2\))</p>
+        <div class="options">
+          (a) \(1 \, \text{s}\)<br>
+          (b) \(2 \, \text{s}\)<br>
+          (c) \(3 \, \text{s}\)<br>
+          (d) \(4 \, \text{s}\)
+        </div>
+        <input type="checkbox" id="q16">
+        <label for="q16" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (b) \(2 \, \text{s}\)<br>
+          <strong>Solution:</strong> 
+          Using the formula for the time period of a pendulum:
+          \[
+          T = 2\pi\sqrt{\frac{L}{g}} = 2\pi\sqrt{\frac{1}{9.8}} \approx 2 \, \text{s}.
+          \]
+        </div>
+      </div>
+  
+      <!-- Center of Mass -->
+      <h2>9. Center of Mass</h2>
+      <div class="question">
+        <p><strong>Q17:</strong> Where is the center of mass of a uniform rod located?</p>
+        <div class="options">
+          (a) At one end<br>
+          (b) At the midpoint<br>
+          (c) Outside the rod<br>
+          (d) At the quarter point
+        </div>
+        <input type="checkbox" id="q17">
+        <label for="q17" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (b) At the midpoint<br>
+          <strong>Explanation:</strong> For a uniform rod, the center of mass lies at its geometric center (midpoint).
+        </div>
+      </div>
+  
+      <div class="question">
+        <p><strong>Q18:</strong> Does the center of mass always lie within the body?</p>
+        <div class="options">
+          (a) Yes<br>
+          (b) No<br>
+          (c) Only for solids<br>
+          (d) Only for fluids
+        </div>
+        <input type="checkbox" id="q18">
+        <label for="q18" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (b) No<br>
+          <strong>Explanation:</strong> No, e.g., a ring’s center of mass lies at its center, outside the material.
+        </div>
+      </div>
+  
+      <!-- Collisions -->
+      <h2>10. Collisions</h2>
+      <div class="question">
+        <p><strong>Q19:</strong> In which type of collision is kinetic energy conserved?</p>
+        <div class="options">
+          (a) Elastic<br>
+          (b) Inelastic<br>
+          (c) Perfectly inelastic<br>
+          (d) None of these
+        </div>
+        <input type="checkbox" id="q19">
+        <label for="q19" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (a) Elastic<br>
+          <strong>Explanation:</strong> Kinetic energy is conserved only in elastic collisions.
+        </div>
+      </div>
+  
+      <div class="question">
+        <p><strong>Q20:</strong> A \(2 \, \text{kg}\) ball moving at \(3 \, \text{m/s}\) collides with a stationary \(1 \, \text{kg}\) ball. After the collision, the \(2 \, \text{kg}\) ball moves at \(1 \, \text{m/s}\). What is the velocity of the \(1 \, \text{kg}\) ball?</p>
+        <div class="options">
+          (a) \(2 \, \text{m/s}\)<br>
+          (b) \(3 \, \text{m/s}\)<br>
+          (c) \(4 \, \text{m/s}\)<br>
+          (d) \(5 \, \text{m/s}\)
+        </div>
+        <input type="checkbox" id="q20">
+        <label for="q20" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (c) \(4 \, \text{m/s}\)<br>
+          <strong>Solution:</strong> 
+          Using conservation of momentum:
+          \[
+          m_1u_1 + m_2u_2 = m_1v_1 + m_2v_2 \implies (2)(3) + (1)(0) = (2)(1) + (1)v_2.
+          \]
+          \[
+          6 = 2 + v_2 \implies v_2 = 4 \, \text{m/s}.
+          \]
+        </div>
+      </div>
+  
+      <!-- Add remaining questions here -->
+  
+      <!-- Questions 21 to 50 -->
+      <div class="question">
+        <p><strong>Q21:</strong> What happens to the gravitational force between two objects if the distance between them is halved?</p>
+        <div class="options">
+          (a) Doubles<br>
+          (b) Halves<br>
+          (c) Becomes four times<br>
+          (d) Becomes one-fourth
+        </div>
+        <input type="checkbox" id="q21">
+        <label for="q21" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (c) Becomes four times<br>
+          <strong>Explanation:</strong> \(F \propto \frac{1}{r^2}\). If \(r\) is halved, \(F\) becomes four times.
+        </div>
+      </div>
+  
+      <div class="question">
+        <p><strong>Q22:</strong> Why do astronauts feel weightless in space?</p>
+        <div class="options">
+          (a) No gravity exists in space<br>
+          (b) They are in free fall around Earth<br>
+          (c) Their mass becomes zero<br>
+          (d) Air resistance cancels gravity
+        </div>
+        <input type="checkbox" id="q22">
+        <label for="q22" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (b) They are in free fall around Earth<br>
+          <strong>Explanation:</strong> Astronauts feel weightless because they are in continuous free fall around Earth.
+        </div>
+      </div>
+  
+      <!-- Repeat similar structure for Q23 to Q50 -->
+      <!-- Question 23 -->
+      <div class="question">
+        <p><strong>Q23:</strong> What is the SI unit of angular momentum?</p>
+        <div class="options">
+          (a) \( \text{kg m/s} \)<br>
+          (b) \( \text{kg m}^2/\text{s} \)<br>
+          (c) \( \text{kg m/s}^2 \)<br>
+          (d) \( \text{kg m}^2/\text{s}^2 \)
+        </div>
+        <input type="checkbox" id="q23">
+        <label for="q23" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (b) \( \text{kg m}^2/\text{s} \)<br>
+          <strong>Explanation:</strong> Angular momentum is given by \(L = I\omega\), and its SI unit is \( \text{kg m}^2/\text{s} \).
+        </div>
+      </div>
+  
+      <!-- Question 24 -->
+      <div class="question">
+        <p><strong>Q24:</strong> Two masses of \(5 \, \text{kg}\) and \(10 \, \text{kg}\) are separated by \(2 \, \text{m}\). What is the gravitational force between them? (\(G = 6.67 \times 10^{-11} \, \text{Nm}^2/\text{kg}^2\))</p>
+        <div class="options">
+          (a) \(8.34 \times 10^{-10} \, \text{N}\)<br>
+          (b) \(1.67 \times 10^{-9} \, \text{N}\)<br>
+          (c) \(2.50 \times 10^{-10} \, \text{N}\)<br>
+          (d) \(4.17 \times 10^{-10} \, \text{N}\)
+        </div>
+        <input type="checkbox" id="q24">
+        <label for="q24" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (a) \(8.34 \times 10^{-10} \, \text{N}\)<br>
+          <strong>Solution:</strong> 
+          Using Newton's Law of Gravitation:
+          \[
+          F = G \frac{m_1 m_2}{r^2} = (6.67 \times 10^{-11}) \frac{(5)(10)}{(2)^2} = 8.34 \times 10^{-10} \, \text{N}.
+          \]
+        </div>
+      </div>
+  
+      <!-- Question 25 -->
+      <div class="question">
+        <p><strong>Q25:</strong> What is the escape velocity from Earth’s surface? (\(M = 6 \times 10^{24} \, \text{kg}\), \(R = 6.4 \times 10^6 \, \text{m}\), \(G = 6.67 \times 10^{-11} \, \text{Nm}^2/\text{kg}^2\))</p>
+        <div class="options">
+          (a) \(10.2 \, \text{km/s}\)<br>
+          (b) \(11.2 \, \text{km/s}\)<br>
+          (c) \(12.2 \, \text{km/s}\)<br>
+          (d) \(13.2 \, \text{km/s}\)
+        </div>
+        <input type="checkbox" id="q25">
+        <label for="q25" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (b) \(11.2 \, \text{km/s}\)<br>
+          <strong>Solution:</strong> 
+          Using the formula for escape velocity:
+          \[
+          v_e = \sqrt{\frac{2GM}{R}} = \sqrt{\frac{2(6.67 \times 10^{-11})(6 \times 10^{24})}{6.4 \times 10^6}} \approx 11.2 \, \text{km/s}.
+          \]
+        </div>
+      </div>
+  
+      <!-- Question 26 -->
+      <div class="question">
+        <p><strong>Q26:</strong> What principle explains why a ship floats on water?</p>
+        <div class="options">
+          (a) Pascal’s Law<br>
+          (b) Archimedes’ Principle<br>
+          (c) Bernoulli’s Principle<br>
+          (d) Newton’s Third Law
+        </div>
+        <input type="checkbox" id="q26">
+        <label for="q26" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (b) Archimedes’ Principle<br>
+          <strong>Explanation:</strong> Archimedes’ principle explains buoyancy, which allows ships to float.
+        </div>
+      </div>
+  
+      <!-- Question 27 -->
+      <div class="question">
+        <p><strong>Q27:</strong> Why does a needle float on water?</p>
+        <div class="options">
+          (a) Buoyant force<br>
+          (b) Surface tension<br>
+          (c) Viscosity<br>
+          (d) Gravity
+        </div>
+        <input type="checkbox" id="q27">
+        <label for="q27" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (b) Surface tension<br>
+          <strong>Explanation:</strong> Surface tension acts like an elastic membrane, allowing the needle to float.
+        </div>
+      </div>
+  
+      <!-- Question 28 -->
+      <div class="question">
+        <p><strong>Q28:</strong> What type of wave is sound?</p>
+        <div class="options">
+          (a) Transverse<br>
+          (b) Longitudinal<br>
+          (c) Electromagnetic<br>
+          (d) Surface
+        </div>
+        <input type="checkbox" id="q28">
+        <label for="q28" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (b) Longitudinal<br>
+          <strong>Explanation:</strong> Sound waves are longitudinal waves.
+        </div>
+      </div>
+  
+      <!-- Question 29 -->
+      <div class="question">
+        <p><strong>Q29:</strong> A pendulum has a length of \(1 \, \text{m}\). What is its time period? (\(g = 9.8 \, \text{m/s}^2\))</p>
+        <div class="options">
+          (a) \(1 \, \text{s}\)<br>
+          (b) \(2 \, \text{s}\)<br>
+          (c) \(3 \, \text{s}\)<br>
+          (d) \(4 \, \text{s}\)
+        </div>
+        <input type="checkbox" id="q29">
+        <label for="q29" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (b) \(2 \, \text{s}\)<br>
+          <strong>Solution:</strong> 
+          Using the formula for the time period of a pendulum:
+          \[
+          T = 2\pi\sqrt{\frac{L}{g}} = 2\pi\sqrt{\frac{1}{9.8}} \approx 2 \, \text{s}.
+          \]
+        </div>
+      </div>
+  
+      <!-- Question 30 -->
+      <div class="question">
+        <p><strong>Q30:</strong> Where is the center of mass of a uniform rod located?</p>
+        <div class="options">
+          (a) At one end<br>
+          (b) At the midpoint<br>
+          (c) Outside the rod<br>
+          (d) At the quarter point
+        </div>
+        <input type="checkbox" id="q30">
+        <label for="q30" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (b) At the midpoint<br>
+          <strong>Explanation:</strong> For a uniform rod, the center of mass lies at its geometric center (midpoint).
+        </div>
+      </div>
+  
+      <!-- Question 31 -->
+      <div class="question">
+        <p><strong>Q31:</strong> In which type of collision is kinetic energy conserved?</p>
+        <div class="options">
+          (a) Elastic<br>
+          (b) Inelastic<br>
+          (c) Perfectly inelastic<br>
+          (d) None of these
+        </div>
+        <input type="checkbox" id="q31">
+        <label for="q31" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (a) Elastic<br>
+          <strong>Explanation:</strong> Kinetic energy is conserved only in elastic collisions.
+        </div>
+      </div>
+  
+      <!-- Question 32 -->
+      <div class="question">
+        <p><strong>Q32:</strong> A \(2 \, \text{kg}\) ball moving at \(3 \, \text{m/s}\) collides with a stationary \(1 \, \text{kg}\) ball. After the collision, the \(2 \, \text{kg}\) ball moves at \(1 \, \text{m/s}\). What is the velocity of the \(1 \, \text{kg}\) ball?</p>
+        <div class="options">
+          (a) \(2 \, \text{m/s}\)<br>
+          (b) \(3 \, \text{m/s}\)<br>
+          (c) \(4 \, \text{m/s}\)<br>
+          (d) \(5 \, \text{m/s}\)
+        </div>
+        <input type="checkbox" id="q32">
+        <label for="q32" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (c) \(4 \, \text{m/s}\)<br>
+          <strong>Solution:</strong> 
+          Using conservation of momentum:
+          \[
+          m_1u_1 + m_2u_2 = m_1v_1 + m_2v_2 \implies (2)(3) + (1)(0) = (2)(1) + (1)v_2.
+          \]
+          \[
+          6 = 2 + v_2 \implies v_2 = 4 \, \text{m/s}.
+          \]
+        </div>
+      </div>
+  
+      <!-- Repeat similar structure for Q33 to Q50 -->
+      <!-- Question 33 -->
+      <div class="question">
+        <p><strong>Q33:</strong> What happens to the gravitational force between two objects if the distance between them is halved?</p>
+        <div class="options">
+          (a) Doubles<br>
+          (b) Halves<br>
+          (c) Becomes four times<br>
+          (d) Becomes one-fourth
+        </div>
+        <input type="checkbox" id="q33">
+        <label for="q33" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (c) Becomes four times<br>
+          <strong>Explanation:</strong> Gravitational force \(F \propto \frac{1}{r^2}\). If \(r\) is halved, \(F\) becomes four times.
+        </div>
+      </div>
+  
+      <!-- Question 34 -->
+      <div class="question">
+        <p><strong>Q34:</strong> Why do astronauts feel weightless in space?</p>
+        <div class="options">
+          (a) No gravity exists in space<br>
+          (b) They are in free fall around Earth<br>
+          (c) Their mass becomes zero<br>
+          (d) Air resistance cancels gravity
+        </div>
+        <input type="checkbox" id="q34">
+        <label for="q34" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (b) They are in free fall around Earth<br>
+          <strong>Explanation:</strong> Astronauts feel weightless because they are in continuous free fall around Earth.
+        </div>
+      </div>
+  
+      <!-- Question 35 -->
+      <div class="question">
+        <p><strong>Q35:</strong> Which principle explains the working of a hydraulic lift?</p>
+        <div class="options">
+          (a) Pascal’s Law<br>
+          (b) Archimedes’ Principle<br>
+          (c) Bernoulli’s Principle<br>
+          (d) Newton’s Third Law
+        </div>
+        <input type="checkbox" id="q35">
+        <label for="q35" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (a) Pascal’s Law<br>
+          <strong>Explanation:</strong> Pascal’s Law states that pressure applied to a confined fluid is transmitted equally in all directions.
+        </div>
+      </div>
+  
+      <!-- Question 36 -->
+      <div class="question">
+        <p><strong>Q36:</strong> A solid cube of side \(0.1 \, \text{m}\) is completely submerged in water. What is the buoyant force acting on it? (\(\rho_{\text{water}} = 1000 \, \text{kg/m}^3\), \(g = 10 \, \text{m/s}^2\))</p>
+        <div class="options">
+          (a) \(1 \, \text{N}\)<br>
+          (b) \(10 \, \text{N}\)<br>
+          (c) \(100 \, \text{N}\)<br>
+          (d) \(1000 \, \text{N}\)
+        </div>
+        <input type="checkbox" id="q36">
+        <label for="q36" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (b) \(10 \, \text{N}\)<br>
+          <strong>Solution:</strong> 
+          Buoyant force \(F_b = \rho g V = (1000)(10)(0.1^3) = 10 \, \text{N}\).
+        </div>
+      </div>
+  
+      <!-- Question 37 -->
+      <div class="question">
+        <p><strong>Q37:</strong> The time period of a simple pendulum depends on:</p>
+        <div class="options">
+          (a) Mass of the bob<br>
+          (b) Length of the string<br>
+          (c) Amplitude of oscillation<br>
+          (d) Material of the string
+        </div>
+        <input type="checkbox" id="q37">
+        <label for="q37" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (b) Length of the string<br>
+          <strong>Explanation:</strong> The time period of a simple pendulum is given by \(T = 2\pi\sqrt{\frac{L}{g}}\), which depends only on the length of the string and acceleration due to gravity.
+        </div>
+      </div>
+  
+      <!-- Question 38 -->
+      <div class="question">
+        <p><strong>Q38:</strong> What is the wavelength of a wave with a frequency of \(50 \, \text{Hz}\) and a speed of \(340 \, \text{m/s}\)?</p>
+        <div class="options">
+          (a) \(6.8 \, \text{m}\)<br>
+          (b) \(10 \, \text{m}\)<br>
+          (c) \(17 \, \text{m}\)<br>
+          (d) \(34 \, \text{m}\)
+        </div>
+        <input type="checkbox" id="q38">
+        <label for="q38" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (a) \(6.8 \, \text{m}\)<br>
+          <strong>Solution:</strong> 
+          Wavelength \(\lambda = \frac{v}{f} = \frac{340}{50} = 6.8 \, \text{m}\).
+        </div>
+      </div>
+  
+      <!-- Question 39 -->
+      <div class="question">
+        <p><strong>Q39:</strong> Which law of thermodynamics states that energy cannot be created or destroyed?</p>
+        <div class="options">
+          (a) Zeroth Law<br>
+          (b) First Law<br>
+          (c) Second Law<br>
+          (d) Third Law
+        </div>
+        <input type="checkbox" id="q39">
+        <label for="q39" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (b) First Law<br>
+          <strong>Explanation:</strong> The First Law of Thermodynamics is essentially the law of conservation of energy.
+        </div>
+      </div>
+  
+      <!-- Question 40 -->
+      <div class="question">
+        <p><strong>Q40:</strong> What is the SI unit of heat?</p>
+        <div class="options">
+          (a) Joule<br>
+          (b) Calorie<br>
+          (c) Watt<br>
+          (d) Kelvin
+        </div>
+        <input type="checkbox" id="q40">
+        <label for="q40" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (a) Joule<br>
+          <strong>Explanation:</strong> Heat is a form of energy, and its SI unit is Joule.
+        </div>
+      </div>
+  
+      <!-- Question 41 -->
+      <div class="question">
+        <p><strong>Q41:</strong> A gas expands and does \(200 \, \text{J}\) of work on the surroundings while absorbing \(300 \, \text{J}\) of heat. What is the change in internal energy?</p>
+        <div class="options">
+          (a) \(100 \, \text{J}\)<br>
+          (b) \(200 \, \text{J}\)<br>
+          (c) \(300 \, \text{J}\)<br>
+          (d) \(500 \, \text{J}\)
+        </div>
+        <input type="checkbox" id="q41">
+        <label for="q41" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (a) \(100 \, \text{J}\)<br>
+          <strong>Solution:</strong> 
+          Using the First Law of Thermodynamics:
+          \[
+          \Delta U = Q - W = 300 - 200 = 100 \, \text{J}.
+          \]
+        </div>
+      </div>
+  
+      <!-- Question 42 -->
+      <div class="question">
+        <p><strong>Q42:</strong> What principle explains the lift generated by an airplane wing?</p>
+        <div class="options">
+          (a) Pascal’s Law<br>
+          (b) Archimedes’ Principle<br>
+          (c) Bernoulli’s Principle<br>
+          (d) Newton’s Third Law
+        </div>
+        <input type="checkbox" id="q42">
+        <label for="q42" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (c) Bernoulli’s Principle<br>
+          <strong>Explanation:</strong> Bernoulli’s Principle explains how faster-moving air above the wing creates lower pressure, generating lift.
+        </div>
+      </div>
+  
+      <!-- Question 43 -->
+      <div class="question">
+        <p><strong>Q43:</strong> A liquid flows through a pipe of varying cross-sectional area. If the velocity at a point where the cross-sectional area is \(2 \, \text{cm}^2\) is \(4 \, \text{m/s}\), what is the velocity at a point where the cross-sectional area is \(1 \, \text{cm}^2\)?</p>
+        <div class="options">
+          (a) \(2 \, \text{m/s}\)<br>
+          (b) \(4 \, \text{m/s}\)<br>
+          (c) \(8 \, \text{m/s}\)<br>
+          (d) \(16 \, \text{m/s}\)
+        </div>
+        <input type="checkbox" id="q43">
+        <label for="q43" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (c) \(8 \, \text{m/s}\)<br>
+          <strong>Solution:</strong> 
+          Using the equation of continuity \(A_1v_1 = A_2v_2\):
+          \[
+          (2)(4) = (1)v_2 \implies v_2 = 8 \, \text{m/s}.
+          \]
+        </div>
+      </div>
+  
+      <!-- Question 44 -->
+      <div class="question">
+        <p><strong>Q44:</strong> What is the moment of inertia of a solid sphere of mass \(M\) and radius \(R\) about its diameter?</p>
+        <div class="options">
+          (a) \(\frac{1}{2}MR^2\)<br>
+          (b) \(\frac{2}{3}MR^2\)<br>
+          (c) \(\frac{2}{5}MR^2\)<br>
+          (d) \(MR^2\)
+        </div>
+        <input type="checkbox" id="q44">
+        <label for="q44" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (c) \(\frac{2}{5}MR^2\)<br>
+          <strong>Explanation:</strong> The moment of inertia of a solid sphere about its diameter is \(\frac{2}{5}MR^2\).
+        </div>
+      </div>
+  
+      <!-- Question 45 -->
+      <div class="question">
+        <p><strong>Q45:</strong> A disc of radius \(0.5 \, \text{m}\) and mass \(2 \, \text{kg}\) rotates with an angular velocity of \(10 \, \text{rad/s}\). What is its rotational kinetic energy?</p>
+        <div class="options">
+          (a) \(10 \, \text{J}\)<br>
+          (b) \(25 \, \text{J}\)<br>
+          (c) \(50 \, \text{J}\)<br>
+          (d) \(100 \, \text{J}\)
+        </div>
+        <input type="checkbox" id="q45">
+        <label for="q45" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (b) \(25 \, \text{J}\)<br>
+          <strong>Solution:</strong> 
+          Rotational kinetic energy \(KE = \frac{1}{2}I\omega^2\), where \(I = \frac{1}{2}MR^2\):
+          \[
+          KE = \frac{1}{2}\left(\frac{1}{2}(2)(0.5)^2\right)(10)^2 = 25 \, \text{J}.
+          \]
+        </div>
+      </div>
+  
+      <!-- Question 46 -->
+      <div class="question">
+        <p><strong>Q46:</strong> In a perfectly inelastic collision, what is conserved?</p>
+        <div class="options">
+          (a) Kinetic energy<br>
+          (b) Momentum<br>
+          (c) Both kinetic energy and momentum<br>
+          (d) Neither kinetic energy nor momentum
+        </div>
+        <input type="checkbox" id="q46">
+        <label for="q46" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (b) Momentum<br>
+          <strong>Explanation:</strong> In a perfectly inelastic collision, momentum is conserved, but kinetic energy is not.
+        </div>
+      </div>
+  
+      <!-- Question 47 -->
+      <div class="question">
+        <p><strong>Q47:</strong> Two identical balls collide head-on elastically. If one ball was initially at rest, what happens after the collision?</p>
+        <div class="options">
+          (a) Both balls move together<br>
+          (b) The moving ball stops, and the stationary ball moves with the same velocity<br>
+          (c) Both balls stop<br>
+          (d) The moving ball rebounds
+        </div>
+        <input type="checkbox" id="q47">
+        <label for="q47" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (b) The moving ball stops, and the stationary ball moves with the same velocity<br>
+          <strong>Explanation:</strong> In an elastic collision between identical masses, the velocities are exchanged.
+        </div>
+      </div>
+  
+      <!-- Question 48 -->
+      <div class="question">
+        <p><strong>Q48:</strong> What is the SI unit of pressure?</p>
+        <div class="options">
+          (a) Pascal<br>
+          (b) Newton<br>
+          (c) Joule<br>
+          (d) Watt
+        </div>
+        <input type="checkbox" id="q48">
+        <label for="q48" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (a) Pascal<br>
+          <strong>Explanation:</strong> The SI unit of pressure is Pascal (\(1 \, \text{Pa} = 1 \, \text{N/m}^2\)).
+        </div>
+      </div>
+  
+      <!-- Question 49 -->
+      <div class="question">
+        <p><strong>Q49:</strong> A body starts from rest and moves with uniform acceleration. What is the ratio of distances covered in the first, second, and third seconds?</p>
+        <div class="options">
+          (a) \(1:2:3\)<br>
+          (b) \(1:3:5\)<br>
+          (c) \(1:4:9\)<br>
+          (d) \(1:5:9\)
+        </div>
+        <input type="checkbox" id="q49">
+        <label for="q49" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (b) \(1:3:5\)<br>
+          <strong>Explanation:</strong> For uniform acceleration, the distances covered in successive seconds are in the ratio \(1:3:5\).
+        </div>
+      </div>
+      <!-- Final Question -->
+      <div class="question">
+        <p><strong>Q50:</strong> A satellite orbits Earth at a height equal to the Earth’s radius. What is the acceleration due to gravity at that height? (\(g_{\text{surface}} = 9.8 \, \text{m/s}^2\))</p>
+        <div class="options">
+          (a) \(2.45 \, \text{m/s}^2\)<br>
+          (b) \(4.9 \, \text{m/s}^2\)<br>
+          (c) \(9.8 \, \text{m/s}^2\)<br>
+          (d) \(19.6 \, \text{m/s}^2\)
+        </div>
+        <input type="checkbox" id="q50">
+        <label for="q50" class="show-answer-btn">Show Answer</label>
+        <div class="answer">
+          <strong>Answer:</strong> (a) \(2.45 \, \text{m/s}^2\)<br>
+          <strong>Solution:</strong> 
+          Acceleration due to gravity at height \(h\) is given by:  
+          \[
+          g_h = \frac{g_{\text{surface}}}{\left(1 + \frac{h}{R}\right)^2}.
+          \]  
+          Here, \(h = R\), so:  
+          \[
+          g_h = \frac{9.8}{(1 + 1)^2} = \frac{9.8}{4} = 2.45 \, \text{m/s}^2.
+          \]
+        </div>
+      </div>
+      
+  
+    </div>
+  
+  </body>
+  </html>
